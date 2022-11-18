@@ -1,0 +1,9 @@
+<h1>Watch List</h1>
+
+<%# 1 lien vers tous les films, 1 lien vers toutes les listes, en onglet sous la banner ? %>
+
+<h2><%= "Choose your film :" %></h2>
+
+<%= render "movies/list", movies: @movies %>
+<%= link_to "See all lists", lists_path %>
+<%= link_to "New list", new_list_path %>

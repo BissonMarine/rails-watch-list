@@ -1,0 +1,10 @@
+<div class="new-lists">
+  <div class="new-list">
+    <h1>Create a new <strong>bookmark</strong> !</h1>
+    <%= simple_form_for [ @list, @bookmark ] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+      <%= f.submit "Submit" %>
+    <% end %>
+  </div>
+</div>
